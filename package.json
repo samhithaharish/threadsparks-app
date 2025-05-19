@@ -1,0 +1,17 @@
+{
+	"name": "threadsparks",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"build": "pnpm -r run build",
+		"dev": "pnpm -r --parallel run dev",
+		"dev:shared": "pnpm --filter shared run dev",
+		"dev:api": "pnpm --filter api run dev",
+		"dev:web": "pnpm --filter web run dev"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.0",
+		"typescript": "^5.0.0"
+	},
+	"packageManager": "pnpm@10.11.0"
+}

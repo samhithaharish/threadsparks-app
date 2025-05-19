@@ -9,8 +9,14 @@
 		"strict": true,
 		"skipLibCheck": true,
 		"baseUrl": "./",
+		"rootDirs": ["./src", "../../packages/shared/src"],
+		"outDir": "./dist",
+		"rootDir": "./src",
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["src/*"],
+			"@app/shared/*": ["../../packages/shared/src/*"]
 		}
-	}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }
