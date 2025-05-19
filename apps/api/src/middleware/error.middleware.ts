@@ -42,11 +42,7 @@ export function errorHandler(
 	});
 }
 
-export function notFoundHandler(
-	req: Request,
-	res: Response,
-	next: NextFunction,
-): void {
+export function notFoundHandler(req: Request, res: Response, next: NextFunction): void {
 	const error = new Error(`Not Found - ${req.originalUrl}`) as IError;
 	error.statusCode = 404;
 	next(error);

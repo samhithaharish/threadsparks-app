@@ -7,9 +7,12 @@
 		"dev": "pnpm -r --parallel run dev",
 		"dev:shared": "pnpm --filter shared run dev",
 		"dev:api": "pnpm --filter api run dev",
-		"dev:web": "pnpm --filter web run dev"
+		"dev:web": "pnpm --filter web run dev",
+		"format": "biome format --write .",
+		"format:check": "biome check ."
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
 		"concurrently": "^8.2.0",
 		"typescript": "^5.0.0"
 	},
