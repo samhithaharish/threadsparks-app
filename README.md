@@ -14,6 +14,18 @@ A community-driven platform for sharing and discovering descriptions, powered by
 - Node.js 18+
 - pnpm 8+
 
+## 🚀 Getting Started
+
+```bash
+# 1. Install all the dependencies in the monorepo
+pnpm install
+
+# 2. Start both the frontend and backend servers in development mode
+pnpm dev
+```
+
+The frontend will be available at  `http://localhost:3000` and the backend at `http://localhost:3001`.
+
 ## 🏗️ Project Structure
 
 ```
