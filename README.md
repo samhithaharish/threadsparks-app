@@ -2,19 +2,19 @@
 
 A community-driven platform for sharing and discovering descriptions, powered by modern web technologies.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS
 - **Backend**: Node.js, Express, TypeScript
 - **Package Manager**: pnpm
 - **Linting/Formatting**: Biome
 
-## Prerequisites
+## 📦 Prerequisites
 
 - Node.js 18+
 - pnpm 8+
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```
 threadsparks/
@@ -27,7 +27,7 @@ threadsparks/
 └── README.md         # This file
 ```
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
 
