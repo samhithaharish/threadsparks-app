@@ -15,6 +15,7 @@
 	"packageManager": "pnpm@10.11.0",
 	"dependencies": {
 		"@app/shared": "workspace:*",
+		"@prisma/client": "6.8.2",
 		"cors": "^2.8.5",
 		"dotenv": "^16.4.1",
 		"express": "^4.18.2",
@@ -28,6 +29,7 @@
 		"@types/morgan": "^1.9.9",
 		"@types/node": "^20.11.30",
 		"nodemon": "^3.1.0",
+		"prisma": "^6.8.2",
 		"ts-node": "^10.9.2",
 		"tsx": "^4.7.1",
 		"typescript": "^5.3.3"
