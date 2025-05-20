@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { ApiResponse, User } from "@app/shared";
+import type { ApiResponse, User } from "@workspace/shared";
 
 export default function ExamplePage() {
 	const [user, setUser] = useState<User | null>(null);

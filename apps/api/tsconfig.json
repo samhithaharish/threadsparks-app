@@ -14,7 +14,7 @@
 		"rootDir": "./src",
 		"paths": {
 			"@/*": ["src/*"],
-			"@app/shared/*": ["../../packages/shared/src/*"]
+			"@workspace/shared/*": ["../../packages/shared/src/*"]
 		}
 	},
 	"include": ["src/**/*"],

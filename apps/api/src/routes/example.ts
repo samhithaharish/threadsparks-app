@@ -1,5 +1,5 @@
 import { Router } from "express";
-import type { ApiResponse, User } from "@app/shared";
+import type { ApiResponse, User } from "@workspace/shared";
 
 const router = Router();
 
