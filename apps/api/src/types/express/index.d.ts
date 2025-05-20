@@ -3,7 +3,8 @@ import type { Request, Response, NextFunction } from "express";
 declare global {
 	namespace Express {
 		interface Request {
-			user?: any; // You can replace 'any' with your user type
+			// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+			user?: any; // TODO: Replace 'any' with your user type
 		}
 	}
 }

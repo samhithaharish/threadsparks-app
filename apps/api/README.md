@@ -1,35 +1,46 @@
-# Express TypeScript API
+# Threadsparks API
 
-A modern Express.js API with TypeScript, ESLint, Prettier, and Winston logging.
+The backend API for Threadsparks, built with Express and TypeScript.
 
-## Features
+## 🚀 Development
 
-- TypeScript support
-- API versioning
-- Environment configuration
-- Request validation
-- Logging with Winston
-- Error handling
-- ESLint and Prettier for code quality
-- Path aliases with `@/`
+```bash
+# 1. Install dependencies
+pnpm install
 
-## Project Structure
+# 2. Copy .env.example to .env
+cp .env.example .env
 
-```
-src/
-├── config/           # Configuration files
-├── controllers/      # Route controllers
-│   └── v1/           # API v1 controllers
-├── middleware/       # Express middleware
-├── routes/           # Route definitions
-│   └── v1/           # API v1 routes
-├── services/         # Business logic
-├── types/            # TypeScript type definitions
-├── utils/            # Utility classes and functions
-├── index.ts          # Application entry point
+# 3. Start the development server
+pnpm dev
 ```
 
-## API Documentation
+The API will be available at `http://localhost:3001`.
+
+## 🛠️ Tech Stack
+
+- **Runtime**: Node.js
+- **Framework**: Express
+- **Language**: TypeScript
+- **API**: REST
+- **Logging**: Winston
+
+## 📁 Project Structure
+
+| Directory | Description |
+|-----------|-------------|
+| `src/config/` | Configuration files |
+| `src/middleware/` | Express middleware |
+| `src/routes/` | All route definitions |
+| `src/routes/v1/` | API v1 routes |
+| `src/controllers/` | All route controllers |
+| `src/controllers/v1/` | API v1 controllers |
+| `src/services/` | Business logic services |
+| `src/types/` | TypeScript type definitions |
+| `src/utils/` | Utility functions |
+| `src/index.ts` | Server entry point |
+
+## 📝 API Endpoints
 
 ### Health Check
 
@@ -37,7 +48,7 @@ src/
 GET /health
 ```
 
-Response:
+**Response:**
 
 ```json
 {
@@ -47,3 +58,8 @@ Response:
   "environment": "development"
 }
 ```
+
+## 📚 Learn More
+
+- [Express Documentation](https://expressjs.com/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
