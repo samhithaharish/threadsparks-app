@@ -4,7 +4,7 @@ A community-driven platform for sharing and discovering descriptions, powered by
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
 - **Backend**: Node.js, Express, TypeScript
 - **Package Manager**: pnpm
 - **Linting/Formatting**: Biome
@@ -17,10 +17,13 @@ A community-driven platform for sharing and discovering descriptions, powered by
 ## 🚀 Getting Started
 
 ```bash
-# 1. Install all the dependencies in the monorepo
+# 1. Copy the API server .env.example file to .env
+cp apps/api/.env.example apps/api/.env
+
+# 2. Install all the dependencies in the monorepo
 pnpm install
 
-# 2. Start both the frontend and backend servers in development mode
+# 3. Start both the frontend and backend servers parallelly
 pnpm dev
 ```
 
@@ -28,16 +31,13 @@ The frontend will be available at  `http://localhost:3000` and the backend at `h
 
 ## 🏗️ Project Structure
 
-```
-threadsparks/
-├── api/               # Express API server
-│   ├── src/           # Source code
-│   └── ...
-├── web/              # Next.js frontend
-│   ├── src/           # Source code
-│   └── ...
-└── README.md         # This file
-```
+| Source | Description |
+|---------------|-------------|
+| [`apps/api`](apps/api) | The Backend API server |
+| [`apps/web`](apps/web) | The Frontend Next.js application |
+| [`packages/shared`](packages/shared) | Shared code and types between the frontend and backend |
+
+For a detailed view of all files and directories, explore the repository directly.
 
 ## 🤝 Contributing
 
